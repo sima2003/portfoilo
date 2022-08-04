@@ -1,86 +1,93 @@
-<!DOCTYPE html>
 <html>
-<title>Simamkele's Portfoilo</title>
+<title>My Portfoilo</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body{background-color: antiquewhite;}
-</style>
-<body class="w3-black">
 
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>Gallery</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
+<link rel="stylesheet" type="text/css" href="./style/style.css">
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
 </nav>
 
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Gallery</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Gallery</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
   </div>
-</div>
+</nav>
 
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey"> About Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Hi my name is Simamkele Yonta i live in Gugulethu.
-    <p>I finished my matric last year and this year i decided
-     to study IT at Codetelligence.
-    <p>I'm a hard worker and i believe in time management.
-    <p>I'm a good listener and i love working as a team
-    and share different kind of views. I'm a very good singer.
-    <p>Most of my time i read books. I did computer literacy
-    at Beautiful Gate. I'm a person who wants to acknoledge more,
-    a person who wants to know information about certain things.
+<div class="w3-main w3-padding-large" style="margin-left:40%">
 
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
-    </p>
-    
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">Gallery</h2>
-    <hr style="width:200px" class="w3-opacity">
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Simamkele Yonta</b></h1>
+    <p>Comptia A+.</p>
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+    </button>
+  </header>
+
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">Gallery</h2>
+    <hr class="w3-opacity">
 
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="picture1.webp" style="width:30%">
-        <img src="picture2.webp" style="width:30%">
-        <img src="picture3.webp" style="width:30%">
+        <img src="./gallary/photo1.webp" style="width:40%">
+        <img src="./gallary/photo2.webp" style="width:40%">
+        <img src="./gallary/photo3.webp" style="width:40%">
       </div>
 
       <div class="w3-half">
-        <img src="picture4.webp" style="width:30%">
-        <img src="picture5.webp" style="width:30%">
-        <img src="picture6.webp" style="width:30%">
+        <img src="./gallary/photo4.webp" style="width:40%">
+        <img src="./gallary/photo5.webp" style="width:40%">
+        <img src="./gallary/photo6.webp" style="width:40%">
       </div>
-  
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+
+    </div>
+
+  </div>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About Me</h2>
+    <hr class="w3-opacity">
+<p>Hi my name is Simamkele Yonta , im 19 years old and i live in Cape town Gugulethu.
+  <p>I finished my matric last year and tjis year i decided to do IT at Codetelligence.
+    <p>I'm a hard worker and i believe in time management.
+      <p>I'm a good listener and i like working as a team and share different kind of views.
+        <p>Most of my time i read books and listen to music. I did computer literacy at 
+          Beautiful Gate.
+          <p>I'm a person who whats to know more about certain things and i'm a very good singer.
+    </p>
+
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> South Africa , Cape Town</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 0721484968</p>
-<p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: simamkeleyonta@gmail.com</p>
-    </div><br>
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Cape Town , South Africa</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 0721484968</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: simamkeleyonta@gmail.com</p>
+    </div>
+     
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
 </body>
-</html>   
+</html>
